@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="particles-js"></div>
+
+    <div class="container">
+        <div class="content">
+            <!-- Progress Tracker -->
+            <div class="progress-container">
+                <div class="progress-dot" data-section="Home"></div>
+                <div class="progress-dot" data-section="Projects"></div>
+                <div class="progress-dot" data-section="Certificates"></div>
+                <div class="progress-dot" data-section="Skills"></div>
+                <div class="progress-dot" data-section="Coding"></div>
+                <div class="progress-dot" data-section="Contact"></div>
+            </div>
+
+            <!-- Header/Navigation - Moved to right side -->
+            <header>
+                <nav class="navbar">
+                    <a href="#home" class="active">
+                        <i class="fas fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                    <a href="#experience">
+                        <i class="fas fa-briefcase"></i>
+                        <span>Work</span>
+                    </a>
+                    <a href="#projects">
+                        <i class="fas fa-code"></i>
+                        <span>Projects</span>
+                    </a>
+                    <a href="#certificates">
+                        <i class="fas fa-award"></i>
+                        <span>Certifications</span>
+                    </a>
+                    <a href="#skills">
+                        <i class="fas fa-tools"></i>
+                        <span>Skills</span>
+                    </a>
+                    <a href="#coding-profiles">
+                        <i class="fas fa fa-laptop-code"></i>
+                        <span>Coding Profiles</span>
+                    </a>
+                    <a href="#contact">
+                        <i class="fas fa-address-card"></i>
+                        <span>Contact</span>
+                    </a>
+                </nav>
+                <div class="menu-icon">&#9776;</div>
+            </header>
+
+            <!-- Home Section - Modified for left-right layout -->
+            <section id="home">
+                <div class="home-content">
+                    <div class="profile-pic-container">
+                        <img src="profile image.jpg" alt="Profile Picture" class="profile-pic">
+                    </div>
+                    <div class="profile-info">
+                        <h2>Tharuni Dayara</h2>
+                        <h3>Software Developer</h3>
+                        <p>Hi!! I'm a passionate Computer Science Engineering student with a strong foundation in software development, data
+structures algorithms (DSA) and skilled in problem-solving. Always eager to explore emerging technologies and
+apply them to real-world challenges, seeking opportunities to leverage expertise and deliver impactful solutions.
+                        </p>
+                        <div class="buttons-container">
+                            <a href="#contact" class="btn">Get In Touch</a>
+                            <a href="CV.pdf" target="_blank" class="btn btn-secondary">View
+                                Resume</a>
+                            <a href="#" class="btn btn-secondary video-btn">Video Resume</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects">
+                <h2 class="title">Featured Projects</h2>
+                <div class="projects-container">
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-img">
+                                <img src="video action recognition.png" alt="Project Name">
+
+                            </div>
+                            <div class="project-info">
+                                <h3>Video Action Recognition in Noisy Environments</h3>
+                                <p> A robust video action recognition system using Mediapipe and deep learning models to accurately detect human actions in noisy, real-world environments.</p>
+                                <div class="project-links">
+                                    <a href="https://github.com/tharuni-01/Video-Action-Recognition-in-Noisy-Environments"
+                                        target="_blank">Source Code</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-img">
+                                <img src="crop price prediction.jpg" alt="Project Name">
+                            </div>
+                            <div class="project-info">
+                                <h3>crop-price-prediction-using-ml-techniques </h3>
+                                <p>A machine learning-based system that predicts future crop prices to aid farmers and stakeholders in making informed agricultural and market decisions.</p>
+                                <div class="project-links">
+                                    <a href="https://github.com/tharuni-01/crop-price-prediction-using-ml-techniques"
+                                        target="_blank">Source Code</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-img">
+                                <img src="titanic.jpg" alt="Project Name">
+                            </div>
+                            <div class="project-info">
+                                <h3>Titanic Survival</h3>
+                                <p>A machine learning project that predicts passenger survival on the Titanic using classification algorithms and passenger data..</p>
+                                <div class="project-links">
+                                    <a href="https://github.com/tharuni-01/Titanic-survival-prediction-using-ml-techniques"
+                                        target="_blank">Source Code</a>
+                                </div>
+                            </div>
+                        </div>
+            
+                    </div>
+                </div>
+            </section>
+
+            <!-- Certificates Section -->
+            <section id="certificates">
+                <h2 class="title">Certificates & Achievements</h2>
+                <div class="certificates-container">
+                    <div class="certificate-column">
+                        <div class="certificate-card">
+                            <div class="certificate-info">
+                                <h3>Forage</h3>
+                                <h4>Forage</h4>
+                                <span class="date">Issued: March 2024</span>
+                                <div class="certificate-links">
+                                    <a href="certificates/Forage.pdf"
+                                        target="_blank">View Certificate</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="certificate-column">
+                        <div class="certificate-card">
+                            <div class="certificate-info">
+                                <h3>Loreal Sustainability Challenge</h3>
+                                <h4>Unstop</h4>
+                                <span class="date">Issued: September 2024</span>
+                                <div class="certificate-links">
+                                    <a href="certificates/Loreal.pdf"
+                                        target="_blank">View Certificate</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="certificate-column">
+                        <div class="certificate-card">
+                            <div class="certificate-info">
+                                <h3>Turing Cup</h3>
+                                <h4>VNR</h4>
+                                <span class="date">Issued: March 2025</span>
+                                <div class="certificate-links">
+                                    <a href="certificates/TuringCup VNR.pdf" 
+                                        target="_blank">View Certificate</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="certificate-column">
+                        <div class="certificate-card">
+                            <div class="certificate-info">
+                                <h3>Programming in Java</h3>
+                                <h4>NPTEL</h4>
+                                <span class="date">Issued: May 2024</span>
+                                <div class="certificate-links">
+                                    <a href="certificates/Programming In Java.pdf" 
+                                        target="_blank">View Certificate</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </section>
+            <!-- Skills Section -->
+            <section id="skills">
+                <h2 class="title">Skills & Expertise</h2>
+                <div class="skills-container">
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h3>Programming Languages</h3>
+                            <div class="skills-list">
+                                <span class="skill-tag">Java</span>
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">C</span>
+                                <span class="skill-tag">C++</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Web Development</h3>
+                            <div class="skills-list">
+                                <span class="skill-tag">HTML</span>
+                                <span class="skill-tag">CSS</span>
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">Node.js</span>
+                                <span class="skill-tag">React.js</span>
+                                <span class="skill-tag">Tailwind CSS</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Machine Learning and AI</h3>
+                            <div class="skills-list">
+                                <span class="skill-tag">Scikit Learn</span>
+                                <span class="skill-tag">Pandas</span>
+                                <span class="skill-tag">Numpy</span>
+                                <span class="skill-tag">GeoPandas</span>
+                                <span class="skill-tag">TensorFlow</span>
+                                <span class="skill-tag">LandTrendr</span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Coding Profiles Section -->
+            <section id="coding-profiles">
+                <h2 class="title">Coding Profiles</h2>
+                <div class="coding-profiles-container">
+                    <div class="profiles-grid">
+                        <a href="https://leetcode.com/u/Tharuni_01/" target="_blank" class="profile-card">
+                            <img src="images/leetcode.png" alt="LeetCode" style="width: 3rem; height: 3rem;">
+                            <span>LeetCode</span>
+                        </a>
+                        <a href="https://www.hackerrank.com/profile/22211a0577" target="_blank" class="profile-card">
+                            <i class="fab fa-hackerrank"></i>
+                            <span>HackerRank</span>
+                        </a>
+                        <a href="https://www.codechef.com/users/tharuni_01" target="_blank" class="profile-card">
+                            <img src="images/codechef.png" alt="CodeChef" style="width: 3rem; height: 3rem;">
+                            <span>CodeChef</span>
+                        </a>
+
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact">
+                <h2 class="title">Get In Touch</h2>
+                <div>
+                    <h3>Email : tharunidayara@gmail.com</h3>
+                    <h3>Phone : +(91) 9121459639</h3>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/dayara-tharuni01/" target="_blank"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/tharuni-01" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer>
+                <p>&copy; 2025 Tharuni Dayara. All Rights Reserved.</p>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Video Overlay -->
+    <div class="video-overlay">
+        <div class="close-video">
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="video-container">
+            <video controls>
+                <source src="test.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+    <script src="script.js" > </script>
+
+</body>
+
+</html>
